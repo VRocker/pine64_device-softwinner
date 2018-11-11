@@ -1,10 +1,6 @@
 $(call inherit-product, device/softwinner/tulip-chiphd/device.mk)
 $(call inherit-product, build/target/product/full_base.mk)
 
-GAPPS_VARIANT := micro
-GAPPS_FORCE_PACKAGE_OVERRIDES := true
-GAPPS_FORCE_BROWSER_OVERRIDES := true
-
 PRODUCT_PACKAGES += \
     Launcher3
 
@@ -43,8 +39,6 @@ PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_AAPT_CONFIG := mdpi large xlarge
 PRODUCT_AAPT_PREF_CONFIG := mdpi
-
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 PRODUCT_BRAND := Allwinner
 PRODUCT_NAME := tulip_chiphd
