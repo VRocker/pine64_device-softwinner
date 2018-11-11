@@ -2,7 +2,6 @@ $(call inherit-product, device/softwinner/tulip-common/tulip_64_bit.mk)
 $(call inherit-product, device/softwinner/tulip-common/tulip-common.mk)
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, hardware/realtek/bluetooth/firmware/rtlbtfw_cfg.mk)
-$(call inherit-product, vendor/supersu/vendor.mk)
 
 KERNEL_SRC_DIR ?= $(ANDROID_BUILD_TOP)/linux/kernel-tulip
 KERNEL_CFG_NAME ?= sun50iw1p1smp_android
@@ -48,7 +47,7 @@ PRODUCT_PACKAGES += \
     Camera \
     Bluetooth
     
-$(call inherit-product, vendor/ayufan-pine64/apps/vendor.mk)
+$(call inherit-product, vendor/vrocker/apps/vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
     device/softwinner/tulip-chiphd/overlay
