@@ -120,8 +120,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.ota.server.ip=ota.pine64.org
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.timezone=America/Los_Angeles \
-    persist.sys.country=US \
+    persist.sys.timezone=Europe/London \
+    persist.sys.country=GB \
     persist.sys.language=en
 
 #define virtual mouse key
